@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Map</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div>
+	<label>SVG:</label><br>
+	<textarea id="svg-input" cols="30" rows="10"></textarea>
+	<button id="svg-go">Add svg</button>
+</div>
+
+
+<div id="svg-container"></div>
+
+<div class="modal" id="modal">
+	<div class="modal-wrapper">
+		<label>
+			Location<br>
+			<input type="text" id="modal-country">
+		</label><br>
+		<label>
+			Number of prevalent cases (95% UI) in 2020 *<br>
+			<input type="text" id="modal-number">
+		</label><br>
+		<label>
+			Total Population, as of 1 July 2020**<br>
+			<input type="text" id="modal-total">
+		</label><br>
+		<button onclick="saveModal()">Add</button>
+		<button onclick="closeModal()">Close</button>
+	</div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
